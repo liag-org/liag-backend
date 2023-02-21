@@ -6,13 +6,14 @@ import Quests from './collections/Quests';
 import Media from './collections/Media';
 import Levels from './collections/Levels';
 import Categories from './collections/Categories';
+import Articles from './collections/Articles';
 
 export default buildConfig({
   serverURL: 'http://localhost:3000',
   admin: {
     user: Users.slug,
   },
-  collections: [Users, Quests, Media, Levels, Categories],
+  collections: [Users, Quests, Articles, Media, Levels, Categories],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
   },
