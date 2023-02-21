@@ -1,8 +1,8 @@
 import { CollectionConfig } from 'payload/types';
 
 // Example Collection - For reference only, this must be added to payload.config.ts to be used.
-const Categories: CollectionConfig = {
-  slug: 'articles',
+const Products: CollectionConfig = {
+  slug: 'products',
   access: {
     read: () => true,
     create: () => true,
@@ -24,12 +24,7 @@ const Categories: CollectionConfig = {
       relationTo: 'media',
       required: true,
     },
-    {
-      name: 'quantity',
-      type: 'number',
-      required: true,
-    },
   ],
 };
 
-export default Categories;
+export default Products;

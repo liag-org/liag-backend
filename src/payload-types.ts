@@ -43,13 +43,6 @@ export interface Media {
   createdAt: string;
   updatedAt: string;
 }
-export interface Article {
-  id: string;
-  name: string;
-  image: Media;
-  price: number;
-  quantity: number;
-}
 export interface Quest {
   id: string;
   title: string;
