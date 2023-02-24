@@ -9,15 +9,15 @@ const Quests: CollectionConfig = {
   },
   fields: [
     {
+      name: 'owner',
+      type: 'relationship',
+      relationTo: 'users',
+      hasMany: false,
+    },
+    {
       name: 'title',
       type: 'text',
       required: true,
-    },
-    {
-      name: 'user',
-      type: 'relationship',
-      relationTo: 'users',
-      hasMany: true,
     },
     {
       name: 'completed',
