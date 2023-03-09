@@ -9,7 +9,7 @@ import Categories from './collections/Categories';
 import Products from './collections/Products';
 
 export default buildConfig({
-  serverURL: 'http://localhost:3000',
+  serverURL: process.env.PAYLOAD_URL,
   admin: {
     user: Users.slug,
   },
