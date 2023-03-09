@@ -26,6 +26,12 @@ const Quests: CollectionConfig = {
       defaultValue: false,
     },
     {
+      name: 'pinned',
+      type: 'checkbox',
+      required: true,
+      defaultValue: false,
+    },
+    {
       name: 'xp',
       type: 'number',
       required: true,
