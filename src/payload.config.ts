@@ -10,6 +10,7 @@ import Products from './collections/Products';
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
+  maxDepth: 30,
   admin: {
     user: Users.slug,
   },

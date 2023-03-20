@@ -32,6 +32,11 @@ const Users: CollectionConfig = {
       defaultValue: 0,
     },
     {
+      name: 'xp',
+      type: 'number',
+      defaultValue: 0,
+    },
+    {
       name: 'quests',
       type: 'relationship',
       relationTo: 'quests',
