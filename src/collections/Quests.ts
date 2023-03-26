@@ -37,7 +37,7 @@ const Quests: CollectionConfig = {
       required: true,
     },
     {
-      name: 'gold',
+      name: 'golds',
       type: 'number',
       required: true,
     },
