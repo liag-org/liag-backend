@@ -8,12 +8,12 @@ const Quests: CollectionConfig = {
     create: () => true,
   },
   fields: [
-    // {
-    //   name: 'owner',
-    //   type: 'relationship',
-    //   relationTo: 'users',
-    //   hasMany: false,
-    // },
+    {
+      name: 'owner',
+      type: 'relationship',
+      relationTo: 'users',
+      hasMany: false,
+    },
     {
       name: 'title',
       type: 'text',
