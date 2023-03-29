@@ -5,6 +5,8 @@ const Levels: CollectionConfig = {
   slug: 'levels',
   access: {
     read: () => true,
+    update: () => true,
+    create: () => true,
   },
   admin: {
     useAsTitle: 'levels',

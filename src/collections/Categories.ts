@@ -6,6 +6,7 @@ const Categories: CollectionConfig = {
   access: {
     read: () => true,
     create: () => true,
+    update: () => true,
   },
   admin: {
     useAsTitle: 'categories',
