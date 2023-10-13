@@ -13,6 +13,12 @@ const Products: CollectionConfig = {
   },
   fields: [
     {
+    name: 'owner',
+    type: 'relationship',
+    relationTo: 'users',
+    hasMany: false,
+    },
+    {
       name: 'name',
       type: 'text',
       required: true,
@@ -40,6 +46,7 @@ const Products: CollectionConfig = {
       type: 'checkbox',
       defaultValue: false,
     },
+    
   ],
 };
 

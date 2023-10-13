@@ -43,6 +43,12 @@ const Users: CollectionConfig = {
       relationTo: 'quests',
       hasMany: true,
     },
+    {
+    name: 'inventory',
+    type: 'relationship',
+    relationTo: 'products',
+    hasMany: true,
+  },
   ],
 };
 
